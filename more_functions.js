@@ -13,8 +13,11 @@ function displayMailingLabel(name,address,city,state,zip) {
 displayMailingLabel("Eden","473 buton dr","Atlanta","Georgia","38827");
 
 //Part 2
-let num1; let num2; let results= Number (num1)+ Number (num2);
+// dont need to but let num1 because it is being made in the function
+//since we are doing omething with the variables made in the fucntion,
+//the results have to be under the function
 function addNumbers(num1,num2) {
+    let results= Number (num1)+ Number (num2);
 console.log(num1+" + "+num2+" = "+results);
 }
 addNumbers(7,9)
