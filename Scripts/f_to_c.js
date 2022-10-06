@@ -2,8 +2,8 @@
 function convertFtoC(currentTemp) {
     var Fahrenheit=currentTemp
     var celsius= (Fahrenheit-32)*5/9;
-    console.log(celsius)
-    return;
+    return celsius
 
 }
-convertFtoC(212);
+let c= convertFtoC(212);
+console.log(c);

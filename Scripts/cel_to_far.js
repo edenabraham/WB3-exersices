@@ -1,8 +1,9 @@
 function convertCtoF(currentTemp) {
     var Celsius=currentTemp
     var fahrenheit= (Celsius*9/5)+32;
-    console.log(fahrenheit)
-    return;
+    return fahrenheit;
 
 }
-convertCtoF(100)
+
+let f= convertCtoF(100);
+console.log(f);
