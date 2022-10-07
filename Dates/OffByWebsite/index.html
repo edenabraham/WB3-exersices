@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trip</title>
+
+    <script>
+        function init() {
+
+
+            const MS_IN_A_DAY = 24 * 60 * 60 * 1000;
+            function onClickSubmit() {
+                let travelDate = new Date(document.getElementById("Date").value);
+                let now = new Date();
+                let diff = travelDate.getTime() - now.getTime();
+                let wholeDays = diff / MS_IN_A_DAY;
+                document.getElementById("outputDays").innerHTML = Math.ceil(wholeDays);
+            }
+            window.submitButton.onclick = onClickSubmit;
+        }
+        window.onload = init;
+        //waiting for the html/body to load (waiting until onload)
+        //window= frame around body
+    </script>
+
+</head>
+
+
+
+<body>
+    <label>
+        Travel Date
+        <br>
+        <input type="date" id="Date">
+        <input type="submit" id="submitButton">
+    </label>
+    <div>
+        Your trip is in
+        <span id="outputDays">?</span>
+        <!--used span instead of div id= because i wanted 
+                       the number between "in""days"-->
+
+
+        days.
+    </div>
+
+
+
+
+</body>
+
+</html>
